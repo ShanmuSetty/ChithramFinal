@@ -1,0 +1,1034 @@
+{
+  "quiz": [
+    {
+      "question": "Which film is considered the first full-length Indian feature film?",
+      "options": {
+        "A": "Alam Ara",
+        "B": "Raja Harishchandra",
+        "C": "Karma",
+        "D": "Shirin Farhad"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who is known as the 'Father of Indian Cinema'?",
+      "options": {
+        "A": "Satyajit Ray",
+        "B": "Dadasaheb Phalke",
+        "C": "Raj Kapoor",
+        "D": "V. Shantaram"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which was the first Indian talkie film?",
+      "options": {
+        "A": "Raja Harishchandra",
+        "B": "Alam Ara",
+        "C": "Karma",
+        "D": "Devdas"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who directed the epic film 'Mughal-e-Azam'?",
+      "options": {
+        "A": "Mehboob Khan",
+        "B": "Guru Dutt",
+        "C": "K. Asif",
+        "D": "Raj Kapoor"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Which actress is known as the 'Tragedy Queen' of Bollywood?",
+      "options": {
+        "A": "Nargis",
+        "B": "Meena Kumari",
+        "C": "Madhubala",
+        "D": "Waheeda Rehman"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "In which year was the first Indian film screened at the Cannes Film Festival?",
+      "options": {
+        "A": "1946",
+        "B": "1952",
+        "C": "1956",
+        "D": "1960"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who composed the music for the film 'Pyaasa'?",
+      "options": {
+        "A": "S.D. Burman",
+        "B": "Shankar-Jaikishan",
+        "C": "Naushad",
+        "D": "Laxmikant-Pyarelal"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked Amitabh Bachchan's debut as a lead actor?",
+      "options": {
+        "A": "Anand",
+        "B": "Zanjeer",
+        "C": "Saat Hindustani",
+        "D": "Bombay to Goa"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who directed the film 'Sholay'?",
+      "options": {
+        "A": "Yash Chopra",
+        "B": "Ramesh Sippy",
+        "C": "Prakash Mehra",
+        "D": "Manmohan Desai"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film won the first National Film Award for Best Feature Film?",
+      "options": {
+        "A": "Shyamchi Aai",
+        "B": "Pathetic Fallacy",
+        "C": "Neecha Nagar",
+        "D": "Jagriti"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who is known as the 'Showman' of Indian cinema?",
+      "options": {
+        "A": "Raj Kapoor",
+        "B": "Yash Chopra",
+        "C": "Subhash Ghai",
+        "D": "Karan Johar"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Which film featured the famous song 'Pyar Deewana Hota Hai'?",
+      "options": {
+        "A": "Kati Patang",
+        "B": "Karz",
+        "C": "Amar Prem",
+        "D": "Bawarchi"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who directed the film 'Pather Panchali'?",
+      "options": {
+        "A": "Ritwik Ghatak",
+        "B": "Satyajit Ray",
+        "C": "Mrinal Sen",
+        "D": "Bimal Roy"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which actress played the role of Basanti in 'Sholay'?",
+      "options": {
+        "A": "Hema Malini",
+        "B": "Jaya Bhaduri",
+        "C": "Rekha",
+        "D": "Zeenat Aman"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What is the name of the character played by Shah Rukh Khan in 'Dilwale Dulhania Le Jayenge'?",
+      "options": {
+        "A": "Raj Malhotra",
+        "B": "Rahul Khanna",
+        "C": "Arjun Malhotra",
+        "D": "Rohit Mehra"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film is considered Guru Dutt's masterpiece?",
+      "options": {
+        "A": "Pyaasa",
+        "B": "Kaagaz Ke Phool",
+        "C": "Sahib Bibi Aur Ghulam",
+        "D": "Chaudhvin Ka Chand"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who sang the song 'Lag Ja Gale' from the film 'Woh Kaun Thi'?",
+      "options": {
+        "A": "Asha Bhosle",
+        "B": "Lata Mangeshkar",
+        "C": "Geeta Dutt",
+        "D": "Suman Kalyanpur"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film marked the directorial debut of Karan Johar?",
+      "options": {
+        "A": "Kuch Kuch Hota Hai",
+        "B": "Kabhi Khushi Kabhie Gham",
+        "C": "My Name is Khan",
+        "D": "Student of the Year"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "In which film did Rajesh Khanna and Sharmila Tagore first pair together?",
+      "options": {
+        "A": "Aradhana",
+        "B": "Amar Prem",
+        "C": "Kashmir Ki Kali",
+        "D": "Chupke Chupke"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who directed the film 'Anand'?",
+      "options": {
+        "A": "Gulzar",
+        "B": "Hrishikesh Mukherjee",
+        "C": "Basu Chatterjee",
+        "D": "Shakti Samanta"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film won the Palme d'Or at Cannes Film Festival?",
+      "options": {
+        "A": "Pather Panchali",
+        "B": "Aparajito",
+        "C": "Kharij",
+        "D": "None of these"
+      },
+      "answer": "D"
+    },
+    {
+      "question": "Who played the role of Gabbar Singh in 'Sholay'?",
+      "options": {
+        "A": "Pran",
+        "B": "Amjad Khan",
+        "C": "Ajit",
+        "D": "Danny Denzongpa"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film featured the song 'Mere Sapno Ki Rani'?",
+      "options": {
+        "A": "Aradhana",
+        "B": "Kati Patang",
+        "C": "Amar Prem",
+        "D": "Daag"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who is known as the 'First Lady of Indian Cinema'?",
+      "options": {
+        "A": "Devika Rani",
+        "B": "Nargis",
+        "C": "Meena Kumari",
+        "D": "Madhubala"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which was the first Indian film to be nominated for an Academy Award?",
+      "options": {
+        "A": "Lagaan",
+        "B": "Mother India",
+        "C": "Salaam Bombay",
+        "D": "Taare Zameen Par"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who directed the film 'Bandini'?",
+      "options": {
+        "A": "Bimal Roy",
+        "B": "Guru Dutt",
+        "C": "Raj Kapoor",
+        "D": "V. Shantaram"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked the debut of Sridevi as a lead actress in Bollywood?",
+      "options": {
+        "A": "Himmatwala",
+        "B": "Sadma",
+        "C": "Solva Sawan",
+        "D": "Tohfa"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who composed the music for 'Mughal-e-Azam'?",
+      "options": {
+        "A": "Naushad",
+        "B": "Shankar-Jaikishan",
+        "C": "S.D. Burman",
+        "D": "Roshan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film is based on the novel 'Devdas' by Sarat Chandra Chattopadhyay?",
+      "options": {
+        "A": "Parineeta",
+        "B": "Devdas",
+        "C": "Biraj Bahu",
+        "D": "Sujata"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who played the title role in 'Mughal-e-Azam'?",
+      "options": {
+        "A": "Dilip Kumar",
+        "B": "Prithviraj Kapoor",
+        "C": "Raj Kumar",
+        "D": "Dev Anand"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the famous dialogue 'Kitne aadmi the'?",
+      "options": {
+        "A": "Zanjeer",
+        "B": "Sholay",
+        "C": "Deewaar",
+        "D": "Don"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who directed the film 'Kaagaz Ke Phool'?",
+      "options": {
+        "A": "Guru Dutt",
+        "B": "Bimal Roy",
+        "C": "Raj Kapoor",
+        "D": "Mehboob Khan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which actress won the first Filmfare Award for Best Actress?",
+      "options": {
+        "A": "Nargis",
+        "B": "Meena Kumari",
+        "C": "Madhubala",
+        "D": "Geeta Bali"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "In which film did Amitabh Bachchan play a double role for the first time?",
+      "options": {
+        "A": "Don",
+        "B": "Adalat",
+        "C": "Kasme Vaade",
+        "D": "The Great Gambler"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who sang the song 'Ae Mere Watan Ke Logo'?",
+      "options": {
+        "A": "Asha Bhosle",
+        "B": "Lata Mangeshkar",
+        "C": "Geeta Dutt",
+        "D": "Suman Kalyanpur"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film is known for the song 'Hum Tum Ek Kamre Mein Band Ho'?",
+      "options": {
+        "A": "Shaan",
+        "B": "Bobby",
+        "C": "Yaadon Ki Baaraat",
+        "D": "Hare Rama Hare Krishna"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who directed the film 'Awara'?",
+      "options": {
+        "A": "Raj Kapoor",
+        "B": "Guru Dutt",
+        "C": "Bimal Roy",
+        "D": "Mehboob Khan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked the directorial debut of Yash Chopra?",
+      "options": {
+        "A": "Dhool Ka Phool",
+        "B": "Waqt",
+        "C": "Dharmputra",
+        "D": "Daag"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who played the role of Anarkali in 'Mughal-e-Azam'?",
+      "options": {
+        "A": "Madhubala",
+        "B": "Meena Kumari",
+        "C": "Nargis",
+        "D": "Waheeda Rehman"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Jo Aada Hai Wo Nibhana Padega'?",
+      "options": {
+        "A": "Haathi Mere Saathi",
+        "B": "Bobby",
+        "C": "Daag",
+        "D": "Bandhan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who is known as the 'Nightingale of India'?",
+      "options": {
+        "A": "Asha Bhosle",
+        "B": "Lata Mangeshkar",
+        "C": "Geeta Dutt",
+        "D": "Shamshad Begum"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film was India's first submission to the Academy Awards?",
+      "options": {
+        "A": "Neecha Nagar",
+        "B": "Aan",
+        "C": "Awaara",
+        "D": "Shree 420"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who directed the film 'Do Bigha Zamin'?",
+      "options": {
+        "A": "Bimal Roy",
+        "B": "Satyajit Ray",
+        "C": "Raj Kapoor",
+        "D": "Guru Dutt"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the famous qawwali 'Parda Hai Parda'?",
+      "options": {
+        "A": "Qurbani",
+        "B": "Amar Akbar Anthony",
+        "C": "Muqaddar Ka Sikandar",
+        "D": "Laawaris"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who played the role of Rahul in 'Kuch Kuch Hota Hai'?",
+      "options": {
+        "A": "Aamir Khan",
+        "B": "Shah Rukh Khan",
+        "C": "Salman Khan",
+        "D": "Akshay Kumar"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film marked the debut of Rekha?",
+      "options": {
+        "A": "Sawan Bhadon",
+        "B": "Namak Haraam",
+        "C": "Do Anjaane",
+        "D": "Ghar"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who composed the music for 'Kabhi Kabhie'?",
+      "options": {
+        "A": "Laxmikant-Pyarelal",
+        "B": "Khayyam",
+        "C": "R.D. Burman",
+        "D": "Kalyanji-Anandji"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film is known for the dialogue 'Mogambo khush hua'?",
+      "options": {
+        "A": "Mr. India",
+        "B": "Shaan",
+        "C": "Karma",
+        "D": "Tezaab"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Chupke Chupke'?",
+      "options": {
+        "A": "Hrishikesh Mukherjee",
+        "B": "Basu Chatterjee",
+        "C": "Gulzar",
+        "D": "Shakti Samanta"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film won the first Filmfare Award for Best Film?",
+      "options": {
+        "A": "Do Bigha Zamin",
+        "B": "Daag",
+        "C": "Shree 420",
+        "D": "Devdas"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Vijay in 'Deewaar'?",
+      "options": {
+        "A": "Amitabh Bachchan",
+        "B": "Shashi Kapoor",
+        "C": "Vinod Khanna",
+        "D": "Rajesh Khanna"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Tum Hi Ho Bandhu'?",
+      "options": {
+        "A": "Cocktail",
+        "B": "Aashiqui 2",
+        "C": "Zindagi Na Milegi Dobara",
+        "D": "Rockstar"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who is known as the 'King of Bollywood'?",
+      "options": {
+        "A": "Amitabh Bachchan",
+        "B": "Shah Rukh Khan",
+        "C": "Aamir Khan",
+        "D": "Salman Khan"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film marked the debut of Madhuri Dixit?",
+      "options": {
+        "A": "Abodh",
+        "B": "Tezaab",
+        "C": "Awara Baap",
+        "D": "Kalank"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Zanjeer'?",
+      "options": {
+        "A": "Prakash Mehra",
+        "B": "Yash Chopra",
+        "C": "Ramesh Sippy",
+        "D": "Manmohan Desai"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Kabhi Kabhi Mere Dil Mein'?",
+      "options": {
+        "A": "Kabhi Kabhie",
+        "B": "Silsila",
+        "C": "Daag",
+        "D": "Lamhe"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Basanti's horse in 'Sholay'?",
+      "options": {
+        "A": "Dhanno",
+        "B": "Chetak",
+        "C": "Badal",
+        "D": "Saraswati"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film is based on the Mahabharata?",
+      "options": {
+        "A": "Mahabharat",
+        "B": "Draupadi",
+        "C": "Kalyug",
+        "D": "All of the above"
+      },
+      "answer": "D"
+    },
+    {
+      "question": "Who composed the music for 'Amar Prem'?",
+      "options": {
+        "A": "R.D. Burman",
+        "B": "S.D. Burman",
+        "C": "Laxmikant-Pyarelal",
+        "D": "Shankar-Jaikishan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked the debut of Anil Kapoor?",
+      "options": {
+        "A": "Woh Saat Din",
+        "B": "Hamare Tumhare",
+        "C": "Mashaal",
+        "D": "Mr. India"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who sang the song 'Chura Liya Hai Tumne Jo Dil Ko'?",
+      "options": {
+        "A": "Mohammed Rafi",
+        "B": "Kishore Kumar",
+        "C": "Mukesh",
+        "D": "Manna Dey"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the character 'Mogambo'?",
+      "options": {
+        "A": "Mr. India",
+        "B": "Shaan",
+        "C": "Karma",
+        "D": "Tezaab"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Umrao Jaan'?",
+      "options": {
+        "A": "Muzaffar Ali",
+        "B": "Yash Chopra",
+        "C": "Shyam Benegal",
+        "D": "Govind Nihalani"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film won the National Film Award for Best Feature Film in 2001?",
+      "options": {
+        "A": "Lagaan",
+        "B": "Dil Chahta Hai",
+        "C": "Gadar",
+        "D": "Chandni Bar"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Simran in 'Dilwale Dulhania Le Jayenge'?",
+      "options": {
+        "A": "Kajol",
+        "B": "Juhi Chawla",
+        "C": "Madhuri Dixit",
+        "D": "Preity Zinta"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Ek Do Teen'?",
+      "options": {
+        "A": "Tezaab",
+        "B": "Beta",
+        "C": "Khel",
+        "D": "Saajan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who is known as the 'Dream Girl' of Bollywood?",
+      "options": {
+        "A": "Hema Malini",
+        "B": "Rekha",
+        "C": "Sridevi",
+        "D": "Madhuri Dixit"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked the directorial debut of Sanjay Leela Bhansali?",
+      "options": {
+        "A": "Khamoshi: The Musical",
+        "B": "Hum Dil De Chuke Sanam",
+        "C": "Devdas",
+        "D": "Black"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Thakur in 'Sholay'?",
+      "options": {
+        "A": "Sanjeev Kumar",
+        "B": "Amjad Khan",
+        "C": "A.K. Hangal",
+        "D": "Jagdeep"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Yeh Jo Mohabbat Hai'?",
+      "options": {
+        "A": "Kati Patang",
+        "B": "Daag",
+        "C": "Amar Prem",
+        "D": "Bawarchi"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Gol Maal'?",
+      "options": {
+        "A": "Hrishikesh Mukherjee",
+        "B": "Basu Chatterjee",
+        "C": "Gulzar",
+        "D": "Rohit Shetty"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film is considered the first masala film of Bollywood?",
+      "options": {
+        "A": "Aan",
+        "B": "Awaara",
+        "C": "Shree 420",
+        "D": "Mughal-e-Azam"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who sang the song 'Ajeeb Dastan Hai Yeh'?",
+      "options": {
+        "A": "Lata Mangeshkar",
+        "B": "Geeta Dutt",
+        "C": "Asha Bhosle",
+        "D": "Suman Kalyanpur"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked the debut of Jackie Shroff?",
+      "options": {
+        "A": "Swami Dada",
+        "B": "Hero",
+        "C": "Andar Baahar",
+        "D": "Karma"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who composed the music for 'Shree 420'?",
+      "options": {
+        "A": "Shankar-Jaikishan",
+        "B": "Naushad",
+        "C": "S.D. Burman",
+        "D": "Roshan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the famous train sequence song 'Chaiyya Chaiyya'?",
+      "options": {
+        "A": "Dil Se",
+        "B": "Taal",
+        "C": "Zubeidaa",
+        "D": "Saathiya"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Veeru in 'Sholay'?",
+      "options": {
+        "A": "Amitabh Bachchan",
+        "B": "Dharmendra",
+        "C": "Vinod Khanna",
+        "D": "Shashi Kapoor"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film is known for the dialogue 'Mere paas maa hai'?",
+      "options": {
+        "A": "Deewaar",
+        "B": "Zanjeer",
+        "C": "Trishul",
+        "D": "Kaala Patthar"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Masoom'?",
+      "options": {
+        "A": "Shekhar Kapur",
+        "B": "Gulzar",
+        "C": "Hrishikesh Mukherjee",
+        "D": "Basu Chatterjee"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Tumhari Sulu'?",
+      "options": {
+        "A": "Tumhari Sulu",
+        "B": "Sadma",
+        "C": "Chandni",
+        "D": "Lamhe"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who is known as the 'Method Actor' of Bollywood?",
+      "options": {
+        "A": "Naseeruddin Shah",
+        "B": "Om Puri",
+        "C": "Irrfan Khan",
+        "D": "All of the above"
+      },
+      "answer": "D"
+    },
+    {
+      "question": "Which film marked the debut of Aamir Khan?",
+      "options": {
+        "A": "Qayamat Se Qayamat Tak",
+        "B": "Holi",
+        "C": "Raakh",
+        "D": "Awwal Number"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who sang the song 'Tere Bina Zindagi Se'?",
+      "options": {
+        "A": "Kishore Kumar and Lata Mangeshkar",
+        "B": "Mohammed Rafi and Asha Bhosle",
+        "C": "Mukesh and Lata Mangeshkar",
+        "D": "Hemant Kumar and Lata Mangeshkar"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film is based on the novel 'Parineeta'?",
+      "options": {
+        "A": "Parineeta (1953)",
+        "B": "Parineeta (2005)",
+        "C": "Both A and B",
+        "D": "Neither A nor B"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who directed the film 'Black'?",
+      "options": {
+        "A": "Sanjay Leela Bhansali",
+        "B": "Karan Johar",
+        "C": "Yash Chopra",
+        "D": "Subhash Ghai"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Suraj Hua Maddham'?",
+      "options": {
+        "A": "Kabhi Khushi Kabhie Gham",
+        "B": "Kuch Kuch Hota Hai",
+        "C": "Mohabbatein",
+        "D": "Kal Ho Naa Ho"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Chandramukhi in 'Devdas' (2002)?",
+      "options": {
+        "A": "Aishwarya Rai",
+        "B": "Madhuri Dixit",
+        "C": "Preity Zinta",
+        "D": "Rani Mukerji"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which film won the Academy Award for Best Foreign Language Film?",
+      "options": {
+        "A": "Lagaan",
+        "B": "Taare Zameen Par",
+        "C": "None",
+        "D": "Slumdog Millionaire"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who composed the music for 'Dilwale Dulhania Le Jayenge'?",
+      "options": {
+        "A": "Jatin-Lalit",
+        "B": "Nadeem-Shravan",
+        "C": "Anu Malik",
+        "D": "A.R. Rahman"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the character 'Circuit'?",
+      "options": {
+        "A": "Munna Bhai M.B.B.S.",
+        "B": "Lage Raho Munna Bhai",
+        "C": "Both A and B",
+        "D": "3 Idiots"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who directed the film '3 Idiots'?",
+      "options": {
+        "A": "Rajkumar Hirani",
+        "B": "Vidhu Vinod Chopra",
+        "C": "Aamir Khan",
+        "D": "Farhan Akhtar"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film marked the debut of Hrithik Roshan?",
+      "options": {
+        "A": "Kaho Naa... Pyaar Hai",
+        "B": "Fiza",
+        "C": "Mission Kashmir",
+        "D": "Koi... Mil Gaya"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who sang the song 'Lukka Chuppi' from the film 'Rang De Basanti'?",
+      "options": {
+        "A": "Lata Mangeshkar",
+        "B": "A.R. Rahman",
+        "C": "Alka Yagnik",
+        "D": "Shreya Ghoshal"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the famous dialogue 'Bade bade deshon mein aisi choti choti baatein hoti rehti hain'?",
+      "options": {
+        "A": "Dilwale Dulhania Le Jayenge",
+        "B": "Kuch Kuch Hota Hai",
+        "C": "Kabhi Khushi Kabhie Gham",
+        "D": "My Name is Khan"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who played the role of Paro in 'Devdas' (2002)?",
+      "options": {
+        "A": "Aishwarya Rai",
+        "B": "Madhuri Dixit",
+        "C": "Preity Zinta",
+        "D": "Rani Mukerji"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film is known for the song 'Tujhe Dekha To Yeh Jaana Sanam'?",
+      "options": {
+        "A": "Dilwale Dulhania Le Jayenge",
+        "B": "Kuch Kuch Hota Hai",
+        "C": "Kabhi Khushi Kabhie Gham",
+        "D": "Mohabbatein"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Taare Zameen Par'?",
+      "options": {
+        "A": "Aamir Khan",
+        "B": "Amole Gupte",
+        "C": "Both A and B",
+        "D": "Rajkumar Hirani"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the song 'Mitwa' sung by Shafqat Amanat Ali?",
+      "options": {
+        "A": "Lagaan",
+        "B": "Kabhi Alvida Naa Kehna",
+        "C": "My Name is Khan",
+        "D": "Chak De! India"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Who played the role of Rani in 'Queen'?",
+      "options": {
+        "A": "Kangana Ranaut",
+        "B": "Deepika Padukone",
+        "C": "Priyanka Chopra",
+        "D": "Anushka Sharma"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film won the National Film Award for Best Popular Film in 2009?",
+      "options": {
+        "A": "3 Idiots",
+        "B": "My Name is Khan",
+        "C": "Slumdog Millionaire",
+        "D": "Paa"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Who composed the music for 'Rockstar'?",
+      "options": {
+        "A": "A.R. Rahman",
+        "B": "Ilaiyaraaja",
+        "C": "Vishal-Shekhar",
+        "D": "Shankar-Ehsaan-Loy"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which film featured the character 'Rancho'?",
+      "options": {
+        "A": "3 Idiots",
+        "B": "PK",
+        "C": "Dangal",
+        "D": "Taare Zameen Par"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Who directed the film 'Zindagi Na Milegi Dobara'?",
+      "options": {
+        "A": "Zoya Akhtar",
+        "B": "Farhan Akhtar",
+        "C": "Karan Johar",
+        "D": "Imtiaz Ali"
+      },
+      "answer": "A"
+    }
+  ]
+}

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cinema Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .quiz-header {
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0;
+        }
+
+        .quiz-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffd700, #ff6b6b, #4ecdc4);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite;
+            margin-bottom: 10px;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .quiz-subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 20px;
+        }
+
+        .progress-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            height: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b);
+            border-radius: 20px;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .quiz-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .question-number {
+            color: #ffd700;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .options-container {
+            display: grid;
+            gap: 15px;
+        }
+
+        .option {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        .option.selected {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+
+        .option.correct {
+            background: rgba(76, 175, 80, 0.3);
+            border-color: #4caf50;
+            color: #4caf50;
+        }
+
+        .option.incorrect {
+            background: rgba(244, 67, 54, 0.3);
+            border-color: #f44336;
+            color: #f44336;
+        }
+
+        .option-letter {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            opacity: 0;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ffd700, #ff6b6b);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .score-display {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ffd700;
+        }
+
+        .results-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        .results-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ffd700, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .final-score {
+            font-size: 3rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .score-message {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #a0a0a0;
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #ffd700;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .loading-message {
+            text-align: center;
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .quiz-title {
+                font-size: 2rem;
+            }
+            
+            .quiz-card {
+                padding: 25px;
+            }
+            
+            .question-text {
+                font-size: 1.2rem;
+            }
+            
+            .option {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <div class="quiz-header" id="quizHeader">
+            <h1 class="quiz-title">🎬 Indian Cinema Quiz</h1>
+            <p class="quiz-subtitle">Test your knowledge with 7 random questions about Indian Cinema</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <div class="quiz-card" id="quizCard">
+            <div class="question-number" id="questionNumber">Question 1 of 7</div>
+            <div class="question-text" id="questionText">
+                <div class="loading-message">Loading questions...</div>
+            </div>
+            <div class="options-container" id="optionsContainer">
+                <!-- Options will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="controls" id="controls">
+            <button class="btn" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+            <div class="score-display" id="scoreDisplay">Score: 0/7</div>
+            <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>Next</button>
+        </div>
+
+        <div class="results-card" id="resultsCard" style="display: none;">
+            <h2 class="results-title">Quiz Complete! 🎉</h2>
+            <div class="final-score" id="finalScore">0/7</div>
+            <div class="score-message" id="scoreMessage">Great job!</div>
+            <button class="btn" onclick="restartQuiz()">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script>
+        // Quiz configuration
+        const TOTAL_QUESTIONS = 7;
+        
+        // Global variables
+        let allQuizData = [];
+        let currentQuizQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedAnswer = null;
+        let hasAnswered = false;
+
+        // Load all quiz data from JSON file
+        async function loadAllQuizData() {
+            try {
+                const response = await fetch('indian_film_breakthrough_mcqs.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                console.log(`Loaded ${data.quiz.length} total questions from JSON`);
+                return data.quiz;
+            } catch (error) {
+                console.error('Failed to load quiz data:', error);
+                // Fallback with sample questions if JSON fails to load
+                return getSampleQuestions();
+            }
+        }
+
+        // Fallback sample questions in case JSON loading fails
+        function getSampleQuestions() {
+            return [
+                {
+                    question: "Which film is considered the first full-length Indian feature film?",
+                    options: {
+                        A: "Raja Harishchandra (1913)",
+                        B: "Dadasaheb Phalke (1912)",
+                        C: "Kalidas (1931)",
+                        D: "Alam Ara (1931)"
+                    },
+                    answer: "A"
+                },
+                {
+                    question: "Which was the first Indian film to win the Palme d'Or at Cannes?",
+                    options: {
+                        A: "Pather Panchali",
+                        B: "Aparajito", 
+                        C: "Neecha Nagar",
+                        D: "Do Bigha Zamin"
+                    },
+                    answer: "C"
+                },
+                {
+                    question: "Who directed the groundbreaking film 'Mughal-e-Azam' (1960)?",
+                    options: {
+                        A: "K. Asif",
+                        B: "Mehboob Khan",
+                        C: "Guru Dutt",
+                        D: "Bimal Roy"
+                    },
+                    answer: "A"
+                },
+                {
+                    question: "Which film marked the beginning of the Indian New Wave cinema movement?",
+                    options: {
+                        A: "Ankur (1974)",
+                        B: "Pather Panchali (1955)",
+                        C: "Meghe Dhaka Tara (1960)",
+                        D: "Garm Hava (1973)"
+                    },
+                    answer: "B"
+                },
+                {
+                    question: "What was revolutionary about 'Alam Ara' (1931)?",
+                    options: {
+                        A: "First color film",
+                        B: "First talkie film",
+                        C: "First film with subtitles",
+                        D: "First film shot outdoors"
+                    },
+                    answer: "B"
+                },
+                {
+                    question: "Which South Indian film became the highest-grossing Indian film worldwide?",
+                    options: {
+                        A: "Baahubali 2: The Conclusion",
+                        B: "RRR",
+                        C: "Pushpa",
+                        D: "KGF Chapter 2"
+                    },
+                    answer: "A"
+                },
+                {
+                    question: "Who is known as the 'Father of Indian Cinema'?",
+                    options: {
+                        A: "Raj Kapoor",
+                        B: "Satyajit Ray",
+                        C: "Dadasaheb Phalke",
+                        D: "V. Shantaram"
+                    },
+                    answer: "C"
+                }
+            ];
+        }
+
+        // Get random questions for the current quiz
+        function getRandomQuestions(allQuestions, count) {
+            if (allQuestions.length <= count) {
+                return [...allQuestions];
+            }
+            
+            const shuffled = [...allQuestions];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            
+            return shuffled.slice(0, count);
+        }
+
+        // Initialize the quiz
+        async function initQuiz() {
+            console.log('Initializing quiz...');
+            
+            // Load all questions from JSON
+            allQuizData = await loadAllQuizData();
+            
+            if (allQuizData.length === 0) {
+                document.getElementById('questionText').innerHTML = 
+                    '<div style="color: #ff6b6b;">Failed to load quiz questions. Please check if the JSON file exists and is accessible.</div>';
+                return;
+            }
+            
+            // Get 7 random questions for this quiz session
+            currentQuizQuestions = getRandomQuestions(allQuizData, TOTAL_QUESTIONS);
+            console.log(`Selected ${currentQuizQuestions.length} random questions for this quiz`);
+            
+            // Initialize quiz state
+            currentQuestionIndex = 0;
+            score = 0;
+            selectedAnswer = null;
+            hasAnswered = false;
+            
+            // Create visual effects and start quiz
+            createParticles();
+            animateEntrance();
+            displayQuestion();
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            particlesContainer.innerHTML = ''; // Clear existing particles
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particlesContainer.appendChild(particle);
+
+                anime({
+                    targets: particle,
+                    translateX: anime.random(-200, 200),
+                    translateY: anime.random(-200, 200),
+                    scale: [0, 1, 0],
+                    opacity: [0, 0.5, 0],
+                    duration: anime.random(3000, 6000),
+                    loop: true,
+                    delay: anime.random(0, 3000),
+                    easing: 'easeInOutSine'
+                });
+            }
+        }
+
+        function animateEntrance() {
+            anime({
+                targets: '#quizHeader',
+                opacity: [0, 1],
+                translateY: [-50, 0],
+                duration: 800,
+                easing: 'easeOutExpo'
+            });
+
+            anime({
+                targets: '#quizCard',
+                opacity: [0, 1],
+                translateY: [50, 0],
+                duration: 800,
+                delay: 200,
+                easing: 'easeOutExpo'
+            });
+
+            anime({
+                targets: '#controls',
+                opacity: [0, 1],
+                translateY: [30, 0],
+                duration: 800,
+                delay: 400,
+                easing: 'easeOutExpo'
+            });
+        }
+
+        function displayQuestion() {
+            if (currentQuestionIndex >= currentQuizQuestions.length) {
+                showResults();
+                return;
+            }
+
+            const question = currentQuizQuestions[currentQuestionIndex];
+            document.getElementById('questionNumber').textContent = 
+                `Question ${currentQuestionIndex + 1} of ${TOTAL_QUESTIONS}`;
+            document.getElementById('questionText').textContent = question.question;
+
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+
+            Object.entries(question.options).forEach(([letter, option]) => {
+                const optionElement = document.createElement('div');
+                optionElement.className = 'option';
+                optionElement.innerHTML = `
+                    <span class="option-letter">${letter}</span>
+                    ${option}
+                `;
+                optionElement.onclick = () => selectOption(letter, optionElement);
+                optionsContainer.appendChild(optionElement);
+            });
+
+            anime({
+                targets: '.option',
+                opacity: [0, 1],
+                translateX: [-50, 0],
+                duration: 600,
+                delay: anime.stagger(100),
+                easing: 'easeOutExpo'
+            });
+
+            updateProgress();
+            updateScore();
+            updateButtons();
+        }
+
+        function selectOption(letter, element) {
+            if (hasAnswered) return;
+            
+            document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+            element.classList.add('selected');
+            selectedAnswer = letter;
+
+            anime({
+                targets: element,
+                scale: [1, 1.05, 1],
+                duration: 300,
+                easing: 'easeOutExpo'
+            });
+
+            document.getElementById('nextBtn').disabled = false;
+        }
+
+        function showAnswer() {
+            hasAnswered = true;
+            const correctAnswer = currentQuizQuestions[currentQuestionIndex].answer;
+            
+            document.querySelectorAll('.option').forEach((opt, index) => {
+                const letter = Object.keys(currentQuizQuestions[currentQuestionIndex].options)[index];
+                if (letter === correctAnswer) {
+                    opt.classList.add('correct');
+                } else if (letter === selectedAnswer && selectedAnswer !== correctAnswer) {
+                    opt.classList.add('incorrect');
+                }
+            });
+
+            if (selectedAnswer === correctAnswer) {
+                score++;
+                anime({
+                    targets: '.option.correct',
+                    scale: [1, 1.1, 1],
+                    duration: 600,
+                    easing: 'easeOutElastic(1, .8)'
+                });
+            }
+
+            updateScore();
+        }
+
+        function nextQuestion() {
+            if (!hasAnswered && selectedAnswer) {
+                showAnswer();
+                document.getElementById('nextBtn').textContent = 
+                    currentQuestionIndex === TOTAL_QUESTIONS - 1 ? 'Finish Quiz' : 'Next Question';
+                return;
+            }
+
+            if (currentQuestionIndex < TOTAL_QUESTIONS - 1) {
+                currentQuestionIndex++;
+                selectedAnswer = null;
+                hasAnswered = false;
+                
+                anime({
+                    targets: '#quizCard',
+                    opacity: [1, 0],
+                    translateX: [-20, 0],
+                    duration: 300,
+                    easing: 'easeInExpo',
+                    complete: () => {
+                        displayQuestion();
+                        anime({
+                            targets: '#quizCard',
+                            opacity: [0, 1],
+                            translateX: [20, 0],
+                            duration: 300,
+                            easing: 'easeOutExpo'
+                        });
+                    }
+                });
+            } else {
+                showResults();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                selectedAnswer = null;
+                hasAnswered = false;
+                
+                anime({
+                    targets: '#quizCard',
+                    opacity: [1, 0],
+                    translateX: [20, 0],
+                    duration: 300,
+                    easing: 'easeInExpo',
+                    complete: () => {
+                        displayQuestion();
+                        anime({
+                            targets: '#quizCard',
+                            opacity: [0, 1],
+                            translateX: [-20, 0],
+                            duration: 300,
+                            easing: 'easeOutExpo'
+                        });
+                    }
+                });
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestionIndex + 1) / TOTAL_QUESTIONS) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        function updateScore() {
+            document.getElementById('scoreDisplay').textContent = 
+                `Score: ${score}/${TOTAL_QUESTIONS}`;
+        }
+
+        function updateButtons() {
+            document.getElementById('prevBtn').disabled = currentQuestionIndex === 0;
+            document.getElementById('nextBtn').disabled = !selectedAnswer && !hasAnswered;
+            document.getElementById('nextBtn').textContent = 
+                hasAnswered ? (currentQuestionIndex === TOTAL_QUESTIONS - 1 ? 'Finish Quiz' : 'Next Question') : 'Submit Answer';
+        }
+
+        function showResults() {
+            document.getElementById('quizCard').style.display = 'none';
+            document.getElementById('controls').style.display = 'none';
+            document.getElementById('resultsCard').style.display = 'block';
+
+            const percentage = Math.round((score / TOTAL_QUESTIONS) * 100);
+            document.getElementById('finalScore').textContent = `${score}/${TOTAL_QUESTIONS}`;
+
+            let message = '';
+            if (percentage >= 90) {
+                message = 'Phenomenal! You\'re a true Bollywood legend! 🏆';
+            } else if (percentage >= 80) {
+                message = 'Outstanding! You\'re a true cinema connoisseur! 🌟';
+            } else if (percentage >= 70) {
+                message = 'Excellent! You know your Indian cinema very well! 🎭';
+            } else if (percentage >= 60) {
+                message = 'Great job! You have solid knowledge of Indian films! 🎬';
+            } else if (percentage >= 50) {
+                message = 'Good effort! Keep exploring Indian cinema! 🎪';
+            } else if (percentage >= 40) {
+                message = 'Not bad! There\'s still much to discover! 🎨';
+            } else {
+                message = 'Keep watching! Indian cinema has so much to offer! 📽️';
+            }
+
+            document.getElementById('scoreMessage').textContent = message;
+
+            anime({
+                targets: '#resultsCard',
+                opacity: [0, 1],
+                scale: [0.8, 1],
+                duration: 800,
+                easing: 'easeOutElastic(1, .8)'
+            });
+        }
+
+        async function restartQuiz() {
+            console.log('Restarting quiz with new random questions...');
+            
+            // Get a new set of 7 random questions
+            currentQuizQuestions = getRandomQuestions(allQuizData, TOTAL_QUESTIONS);
+            console.log('Selected new random questions for restart');
+            
+            // Reset quiz state
+            currentQuestionIndex = 0;
+            score = 0;
+            selectedAnswer = null;
+            hasAnswered = false;
+            
+            // Show quiz elements and hide results
+            document.getElementById('resultsCard').style.display = 'none';
+            document.getElementById('quizCard').style.display = 'block';
+            document.getElementById('controls').style.display = 'flex';
+            
+            // Display the first question of the new quiz
+            displayQuestion();
+        }
+
+        // Initialize quiz when page loads
+        window.addEventListener('load', initQuiz);
+    </script>
+</body>
+</html>

@@ -1,0 +1,604 @@
+{
+  "indian_film_trivia_facts": [
+    {
+      "id": 1,
+      "fact": "Raja Harishchandra (1913) was India's first full-length feature film, directed by Dadasaheb Phalke",
+      "category": "Historical Milestone",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 2,
+      "fact": "Alam Ara (1931) was India's first talkie film, marking the end of the silent era",
+      "category": "Technical Breakthrough",
+      "region": "Hindi"
+    },
+    {
+      "id": 3,
+      "fact": "Kalidas (1931) was Tamil cinema's first talkie film, released the same year as Alam Ara",
+      "category": "Technical Breakthrough",
+      "region": "Tamil"
+    },
+    {
+      "id": 4,
+      "fact": "Bhakta Prahlada (1932) was Telugu cinema's first talkie film",
+      "category": "Technical Breakthrough",
+      "region": "Telugu"
+    },
+    {
+      "id": 5,
+      "fact": "Balan (1938) was Malayalam cinema's first talkie film",
+      "category": "Technical Breakthrough",
+      "region": "Malayalam"
+    },
+    {
+      "id": 6,
+      "fact": "Sati Sulochana (1934) was Kannada cinema's first talkie film",
+      "category": "Technical Breakthrough",
+      "region": "Kannada"
+    },
+    {
+      "id": 7,
+      "fact": "Jamai Shashthi (1931) was Bengali cinema's first talkie film",
+      "category": "Technical Breakthrough",
+      "region": "Bengali"
+    },
+    {
+      "id": 8,
+      "fact": "Ayodhyecha Raja (1932) was Marathi cinema's first talkie film",
+      "category": "Technical Breakthrough",
+      "region": "Marathi"
+    },
+    {
+      "id": 9,
+      "fact": "Satyajit Ray's Apu Trilogy is considered one of the greatest achievements in world cinema",
+      "category": "International Recognition",
+      "region": "Bengali"
+    },
+    {
+      "id": 10,
+      "fact": "Shantaram's Do Aankhen Barah Haath (1957) won the Golden Globe for Best Foreign Language Film",
+      "category": "International Recognition",
+      "region": "Marathi"
+    },
+    {
+      "id": 11,
+      "fact": "Sivaji Ganesan was the first Indian actor to receive an international award for acting at the Afro-Asian Film Festival",
+      "category": "International Recognition",
+      "region": "Tamil"
+    },
+    {
+      "id": 12,
+      "fact": "Mayabazar (1957) is considered the greatest Telugu film ever made and pioneered special effects",
+      "category": "Technical Achievement",
+      "region": "Telugu"
+    },
+    {
+      "id": 13,
+      "fact": "Chemmeen (1965) was the first Malayalam film to win the National Film Award for Best Feature Film",
+      "category": "Awards Achievement",
+      "region": "Malayalam"
+    },
+    {
+      "id": 14,
+      "fact": "Samskara (1970) brought Kannada cinema international recognition at film festivals",
+      "category": "International Recognition",
+      "region": "Kannada"
+    },
+    {
+      "id": 15,
+      "fact": "Mughal-e-Azam (1960) took 16 years to complete and was partially shot in color",
+      "category": "Production Record",
+      "region": "Hindi"
+    },
+    {
+      "id": 16,
+      "fact": "Parasakthi (1952) launched the careers of Sivaji Ganesan and marked Karunanidhi's entry into films",
+      "category": "Career Launch",
+      "region": "Tamil"
+    },
+    {
+      "id": 17,
+      "fact": "Pathala Bhairavi (1951) was Telugu cinema's first fantasy film with extensive special effects",
+      "category": "Genre Innovation",
+      "region": "Telugu"
+    },
+    {
+      "id": 18,
+      "fact": "Neelakuyil (1954) was the first Malayalam film to receive national recognition",
+      "category": "Recognition Milestone",
+      "region": "Malayalam"
+    },
+    {
+      "id": 19,
+      "fact": "Bedara Kannappa (1954) established Dr. Rajkumar as the biggest star of Kannada cinema",
+      "category": "Star Establishment",
+      "region": "Kannada"
+    },
+    {
+      "id": 20,
+      "fact": "Devdas (1955) by Bimal Roy established the template for tragic romance in Indian cinema",
+      "category": "Genre Definition",
+      "region": "Bengali/Hindi"
+    },
+    {
+      "id": 21,
+      "fact": "Kanyasulkam (1955) was based on the first social play in Telugu literature",
+      "category": "Literary Adaptation",
+      "region": "Telugu"
+    },
+    {
+      "id": 22,
+      "fact": "Pinjra (1972) was Marathi cinema's first color film",
+      "category": "Technical Breakthrough",
+      "region": "Marathi"
+    },
+    {
+      "id": 23,
+      "fact": "Joymoti (1935) was Assamese cinema's first film, directed by Jyoti Prasad Agarwala",
+      "category": "Regional Origin",
+      "region": "Assamese"
+    },
+    {
+      "id": 24,
+      "fact": "Sheila (1956) was Punjabi cinema's first major successful film",
+      "category": "Regional Milestone",
+      "region": "Punjabi"
+    },
+    {
+      "id": 25,
+      "fact": "Bhuvan Shome (1969) marked the beginning of the New Wave movement in Indian cinema",
+      "category": "Movement Origin",
+      "region": "Hindi"
+    },
+    {
+      "id": 26,
+      "fact": "Thiruvilaiyadal (1965) is considered one of the greatest devotional films in Tamil cinema",
+      "category": "Genre Excellence",
+      "region": "Tamil"
+    },
+    {
+      "id": 27,
+      "fact": "Sankarabharanam (1980) revived interest in classical music through Telugu cinema",
+      "category": "Cultural Revival",
+      "region": "Telugu"
+    },
+    {
+      "id": 28,
+      "fact": "Elippathayam (1981) won the Golden Leopard at the Locarno International Film Festival",
+      "category": "International Recognition",
+      "region": "Malayalam"
+    },
+    {
+      "id": 29,
+      "fact": "Accident (1985) was the first Kannada film to be entirely shot with sync sound",
+      "category": "Technical Innovation",
+      "region": "Kannada"
+    },
+    {
+      "id": 30,
+      "fact": "Hirak Rajar Deshe (1980) was Satyajit Ray's first film with fantasy and musical elements",
+      "category": "Genre Experiment",
+      "region": "Bengali"
+    },
+    {
+      "id": 31,
+      "fact": "Sinhasan (1979) was the first Marathi film to use Dolby sound system",
+      "category": "Technical Breakthrough",
+      "region": "Marathi"
+    },
+    {
+      "id": 32,
+      "fact": "Chameli Memsaab (1975) was one of the first Punjabi films to address women's issues",
+      "category": "Social Commentary",
+      "region": "Punjabi"
+    },
+    {
+      "id": 33,
+      "fact": "Aparajito (1956) won the Golden Lion at the Venice Film Festival",
+      "category": "International Recognition",
+      "region": "Bengali"
+    },
+    {
+      "id": 34,
+      "fact": "16 Vayathinile (1977) launched the careers of Kamal Haasan and Rajinikanth",
+      "category": "Career Launch",
+      "region": "Tamil"
+    },
+    {
+      "id": 35,
+      "fact": "Sagara Sangamam (1983) showcased classical dance in Telugu cinema",
+      "category": "Cultural Showcase",
+      "region": "Telugu"
+    },
+    {
+      "id": 36,
+      "fact": "Piravi (1988) won the Camera d'Or at the Cannes Film Festival",
+      "category": "International Recognition",
+      "region": "Malayalam"
+    },
+    {
+      "id": 37,
+      "fact": "Dweepa (2002) was the first Kannada film to win the National Film Award for Best Feature Film",
+      "category": "National Recognition",
+      "region": "Kannada"
+    },
+    {
+      "id": 38,
+      "fact": "Antarjali Jatra (1987) brought international recognition to contemporary Bengali cinema",
+      "category": "International Recognition",
+      "region": "Bengali"
+    },
+    {
+      "id": 39,
+      "fact": "Shwaas (2004) was the first Marathi film to be India's official entry to the Oscars",
+      "category": "Oscar Entry",
+      "region": "Marathi"
+    },
+    {
+      "id": 40,
+      "fact": "Anhe Ghore Da Daan (2011) was the first Punjabi film to win the National Film Award",
+      "category": "National Recognition",
+      "region": "Punjabi"
+    },
+    {
+      "id": 41,
+      "fact": "Baahubali series created a new template for pan-Indian filmmaking",
+      "category": "Industry Innovation",
+      "region": "Telugu"
+    },
+    {
+      "id": 42,
+      "fact": "Dangal (2016) became the highest-grossing Indian film in China",
+      "category": "International Box Office",
+      "region": "Hindi"
+    },
+    {
+      "id": 43,
+      "fact": "Kabali (2016) was released in over 400 screens worldwide simultaneously",
+      "category": "Global Release",
+      "region": "Tamil"
+    },
+    {
+      "id": 44,
+      "fact": "The Great Indian Kitchen (2021) sparked conversations about gender roles across India",
+      "category": "Social Impact",
+      "region": "Malayalam"
+    },
+    {
+      "id": 45,
+      "fact": "KGF series made Kannada cinema globally recognized",
+      "category": "Global Recognition",
+      "region": "Kannada"
+    },
+    {
+      "id": 46,
+      "fact": "Feluda series by Satyajit Ray created the template for detective films in Bengali cinema",
+      "category": "Genre Creation",
+      "region": "Bengali"
+    },
+    {
+      "id": 47,
+      "fact": "Sairat (2016) became the highest-grossing Marathi film ever",
+      "category": "Box Office Record",
+      "region": "Marathi"
+    },
+    {
+      "id": 48,
+      "fact": "Chaar Sahibzaade (2014) was the first Punjabi 3D animated film",
+      "category": "Technical Innovation",
+      "region": "Punjabi"
+    },
+    {
+      "id": 49,
+      "fact": "Village Rockstars (2017) from Assam won the National Film Award for Best Feature Film",
+      "category": "National Recognition",
+      "region": "Assamese"
+    },
+    {
+      "id": 50,
+      "fact": "Tumhari Sulu (2017) was praised for its authentic portrayal of middle-class life",
+      "category": "Social Representation",
+      "region": "Hindi"
+    },
+    {
+      "id": 51,
+      "fact": "Arjun Reddy (2017) was remade in multiple Indian languages due to its popularity",
+      "category": "Multi-lingual Success",
+      "region": "Telugu"
+    },
+    {
+      "id": 52,
+      "fact": "Vikram Vedha (2017) was praised for its noir storytelling in Tamil cinema",
+      "category": "Genre Excellence",
+      "region": "Tamil"
+    },
+    {
+      "id": 53,
+      "fact": "Ee.Ma.Yau (2018) brought international recognition to contemporary Malayalam cinema",
+      "category": "International Recognition",
+      "region": "Malayalam"
+    },
+    {
+      "id": 54,
+      "fact": "Avane Srimannarayana (2019) was Kannada cinema's first steampunk film",
+      "category": "Genre Innovation",
+      "region": "Kannada"
+    },
+    {
+      "id": 55,
+      "fact": "Gotya (2014) was one of the first Marathi films to address autism",
+      "category": "Social Awareness",
+      "region": "Marathi"
+    },
+    {
+      "id": 56,
+      "fact": "Qissa (2013) brought international recognition to contemporary Punjabi cinema",
+      "category": "International Recognition",
+      "region": "Punjabi"
+    },
+    {
+      "id": 57,
+      "fact": "Haendel Nakhor (2015) was the first Assamese film to be screened at Cannes",
+      "category": "International Recognition",
+      "region": "Assamese"
+    },
+    {
+      "id": 58,
+      "fact": "Shah Rukh Khan started his career in television before becoming the 'King of Bollywood'",
+      "category": "Career Journey",
+      "region": "Hindi"
+    },
+    {
+      "id": 59,
+      "fact": "MGR (M.G. Ramachandran) became Chief Minister of Tamil Nadu partly due to his film popularity",
+      "category": "Politics-Cinema Connection",
+      "region": "Tamil"
+    },
+    {
+      "id": 60,
+      "fact": "N.T. Rama Rao founded a political party after his successful film career",
+      "category": "Politics-Cinema Connection",
+      "region": "Telugu"
+    },
+    {
+      "id": 61,
+      "fact": "Mohanlal has acted in over 350 films across multiple languages",
+      "category": "Career Achievement",
+      "region": "Malayalam"
+    },
+    {
+      "id": 62,
+      "fact": "Dr. Rajkumar was the first actor to receive the Dadasaheb Phalke Award from Karnataka",
+      "category": "Awards Achievement",
+      "region": "Kannada"
+    },
+    {
+      "id": 63,
+      "fact": "Uttam Kumar was called the 'Mahanayak' of Bengali cinema",
+      "category": "Title Achievement",
+      "region": "Bengali"
+    },
+    {
+      "id": 64,
+      "fact": "Dada Kondke revolutionized comedy in Marathi cinema",
+      "category": "Genre Revolution",
+      "region": "Marathi"
+    },
+    {
+      "id": 65,
+      "fact": "Gurdas Maan is considered the cultural ambassador of Punjab through cinema",
+      "category": "Cultural Impact",
+      "region": "Punjabi"
+    },
+    {
+      "id": 66,
+      "fact": "RRR (2022) became the first Indian film to win an Oscar for Best Original Song",
+      "category": "Oscar Achievement",
+      "region": "Telugu"
+    },
+    {
+      "id": 67,
+      "fact": "Pushpa created a pan-Indian phenomenon with its dialogues and songs",
+      "category": "Cultural Phenomenon",
+      "region": "Telugu"
+    },
+    {
+      "id": 68,
+      "fact": "Master (2021) was simultaneously released in theaters and OTT during the pandemic",
+      "category": "Distribution Innovation",
+      "region": "Tamil"
+    },
+    {
+      "id": 69,
+      "fact": "The Priest (2021) was one of the first Malayalam horror films to achieve commercial success",
+      "category": "Genre Success",
+      "region": "Malayalam"
+    },
+    {
+      "id": 70,
+      "fact": "Bell Bottom (2021) was the first major film to release in theaters during COVID-19",
+      "category": "Pandemic Milestone",
+      "region": "Kannada"
+    },
+    {
+      "id": 71,
+      "fact": "Shantit Kranti (2021) addressed contemporary social issues in Marathi cinema",
+      "category": "Social Commentary",
+      "region": "Marathi"
+    },
+    {
+      "id": 72,
+      "fact": "Jagga Jasoos (2017) experimented with musical storytelling in Hindi cinema",
+      "category": "Narrative Innovation",
+      "region": "Hindi"
+    },
+    {
+      "id": 73,
+      "fact": "96 (2018) redefined romance in contemporary Tamil cinema",
+      "category": "Genre Redefinition",
+      "region": "Tamil"
+    },
+    {
+      "id": 74,
+      "fact": "Jersey (2019) was successfully remade in Hindi, proving Telugu cinema's appeal",
+      "category": "Cross-regional Success",
+      "region": "Telugu"
+    },
+    {
+      "id": 75,
+      "fact": "Kumbakonam Gopalu (2019) revived comedy in Malayalam cinema",
+      "category": "Genre Revival",
+      "region": "Malayalam"
+    },
+    {
+      "id": 76,
+      "fact": "Kirik Party (2016) became a cult film among Kannada youth",
+      "category": "Cultural Impact",
+      "region": "Kannada"
+    },
+    {
+      "id": 77,
+      "fact": "Anandi Gopal (2019) was the first Marathi biographical film about a female doctor",
+      "category": "Biographical Milestone",
+      "region": "Marathi"
+    },
+    {
+      "id": 78,
+      "fact": "Sajjan Singh Rangroot (2018) was the highest-grossing Punjabi film of its time",
+      "category": "Box Office Record",
+      "region": "Punjabi"
+    },
+    {
+      "id": 79,
+      "fact": "Kothanodi (2015) won multiple international awards for Assamese cinema",
+      "category": "International Recognition",
+      "region": "Assamese"
+    },
+    {
+      "id": 80,
+      "fact": "Dangal's success in China opened new markets for Indian films",
+      "category": "Market Expansion",
+      "region": "Hindi"
+    },
+    {
+      "id": 81,
+      "fact": "Baahubali's success led to increased investment in South Indian cinema",
+      "category": "Industry Impact",
+      "region": "Telugu"
+    },
+    {
+      "id": 82,
+      "fact": "Rajinikanth's films regularly release with fan celebrations across Tamil Nadu",
+      "category": "Fan Culture",
+      "region": "Tamil"
+    },
+    {
+      "id": 83,
+      "fact": "Minnal Murali (2021) was Netflix's first Indian superhero film",
+      "category": "OTT Innovation",
+      "region": "Malayalam"
+    },
+    {
+      "id": 84,
+      "fact": "Kantara (2022) showcased Kannada folk culture to global audiences",
+      "category": "Cultural Showcase",
+      "region": "Kannada"
+    },
+    {
+      "id": 85,
+      "fact": "Kaun Banega Crorepati's success led to multiple regional versions",
+      "category": "Format Success",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 86,
+      "fact": "Court (2014) was India's official entry to the Oscars and won 19 international awards",
+      "category": "International Success",
+      "region": "Marathi"
+    },
+    {
+      "id": 87,
+      "fact": "Udta Punjab (2016) faced censorship issues but sparked important conversations",
+      "category": "Social Impact",
+      "region": "Punjabi/Hindi"
+    },
+    {
+      "id": 88,
+      "fact": "Assamese cinema has the distinction of producing India's youngest National Award winner",
+      "category": "Record Achievement",
+      "region": "Assamese"
+    },
+    {
+      "id": 89,
+      "fact": "Regional OTT platforms have given new life to local language content",
+      "category": "Digital Revolution",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 90,
+      "fact": "Film festivals like IFFK and IFFI have promoted regional cinema globally",
+      "category": "Promotion Platform",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 91,
+      "fact": "Dubbed versions have made regional films accessible across linguistic barriers",
+      "category": "Language Bridge",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 92,
+      "fact": "Music directors like A.R. Rahman have worked across all Indian film industries",
+      "category": "Cross-regional Talent",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 93,
+      "fact": "Film institutes in different states have nurtured regional cinema talent",
+      "category": "Education Impact",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 94,
+      "fact": "Co-productions between regional industries have increased cultural exchange",
+      "category": "Industry Collaboration",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 95,
+      "fact": "Digital technology has democratized filmmaking across all regional industries",
+      "category": "Technology Impact",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 96,
+      "fact": "Women filmmakers are making significant contributions across all regional cinemas",
+      "category": "Gender Progress",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 97,
+      "fact": "Regional cinemas are increasingly addressing global themes while maintaining local identity",
+      "category": "Glocal Approach",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 98,
+      "fact": "Film tourism has been boosted by popular regional films showcasing local landscapes",
+      "category": "Tourism Impact",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 99,
+      "fact": "Regional film industries now compete globally rather than just nationally",
+      "category": "Global Competition",
+      "region": "Pan-Indian"
+    },
+    {
+      "id": 100,
+      "fact": "The future of Indian cinema lies in the collaborative strength of all regional industries",
+      "category": "Future Vision",
+      "region": "Pan-Indian"
+    }
+  ]
+}

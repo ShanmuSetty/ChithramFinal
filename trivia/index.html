@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cinema Trivia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Animated background particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #00d4ff;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 0;
+        }
+        
+        .title {
+            font-family: 'Orbitron', monospace;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b, #4ecdc4, #45b7d1);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 4s ease infinite;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .trivia-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .trivia-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideIn 0.8s ease-out forwards;
+        }
+        
+        @keyframes slideIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .trivia-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .trivia-card:hover::before {
+            left: 100%;
+        }
+        
+        .trivia-header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .trivia-id {
+            font-family: 'Orbitron', monospace;
+            font-size: 0.9rem;
+            color: #00d4ff;
+            background: rgba(0, 212, 255, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+        
+        .trivia-category {
+            font-size: 0.8rem;
+            color: #4ecdc4;
+            background: rgba(78, 205, 196, 0.1);
+            padding: 5px 12px;
+            border-radius: 15px;
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .trivia-fact {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .generate-btn {
+            background: linear-gradient(45deg, #00d4ff, #0099cc);
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 15px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 10px 30px rgba(0, 212, 255, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .generate-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .generate-btn:hover::before {
+            left: 100%;
+        }
+        
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                0 15px 40px rgba(0, 212, 255, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        
+        .generate-btn:active {
+            transform: translateY(0);
+            box-shadow: 
+                0 5px 20px rgba(0, 212, 255, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            min-width: 120px;
+        }
+        
+        .stat-number {
+            font-family: 'Orbitron', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #00d4ff;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            margin-top: 5px;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            color: #00d4ff;
+            font-family: 'Orbitron', monospace;
+        }
+        
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #00d4ff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .trivia-card {
+                padding: 25px;
+                margin: 0 10px;
+            }
+            
+            .trivia-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .stats {
+                gap: 20px;
+            }
+            
+            .stat-item {
+                min-width: 100px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">INDIAN CINEMA TRIVIA</h1>
+            <p class="subtitle">Discover the fascinating world of Indian films</p>
+        </div>
+        
+        <div class="trivia-container">
+            <div class="trivia-card" id="triviaCard" style="display: none;">
+                <div class="trivia-header">
+                    <span class="trivia-id" id="triviaId">#1</span>
+                </div>
+                <div class="trivia-category" id="triviaCategory">Category</div>
+                <div class="trivia-fact" id="triviaFact">Click the button below to discover amazing facts about Indian cinema!</div>
+            </div>
+            
+            <button class="generate-btn" id="generateBtn" onclick="generateTrivia()">
+                <span id="btnText">Generate Trivia</span>
+            </button>
+            
+            <div class="loading" id="loading">Loading amazing trivia...</div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">100</div>
+                    <div class="stat-label">Total Facts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="viewedCount">0</div>
+                    <div class="stat-label">Facts Viewed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    let triviaData = null;
+    let viewedCount = 0;
+    let viewedTrivia = new Set();
+
+    // Load trivia data from JSON file
+    async function loadTriviaData() {
+        try {
+            const response = await fetch('movieTrivia.json'); // Ensure this file exists in the same folder as index.html
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            triviaData = data.indian_film_trivia_facts;
+            console.log(`Loaded ${triviaData.length} trivia facts`);
+        } catch (error) {
+            console.error('Error loading trivia data:', error);
+            document.getElementById('triviaFact').textContent =
+                'Unable to load trivia data. Please make sure the movieTrivia.json file is available.';
+        }
+    }
+
+    // Generate random trivia
+    function generateTrivia() {
+        if (!triviaData || triviaData.length === 0) {
+            alert('Trivia data not loaded yet. Please wait a moment and try again.');
+            return;
+        }
+
+        const btn = document.getElementById('generateBtn');
+        const loading = document.getElementById('loading');
+        const triviaCard = document.getElementById('triviaCard');
+
+        // Show loading
+        btn.style.display = 'none';
+        loading.style.display = 'block';
+
+        setTimeout(() => {
+            const randomIndex = Math.floor(Math.random() * triviaData.length);
+            const selectedTrivia = triviaData[randomIndex];
+
+            // Update trivia display
+            document.getElementById('triviaId').textContent = `#${selectedTrivia.id}`;
+            document.getElementById('triviaCategory').textContent = selectedTrivia.category;
+            document.getElementById('triviaFact').textContent = selectedTrivia.fact;
+
+            // Update viewed count
+            if (!viewedTrivia.has(selectedTrivia.id)) {
+                viewedTrivia.add(selectedTrivia.id);
+                viewedCount++;
+                document.getElementById('viewedCount').textContent = viewedCount;
+            }
+
+            // Show trivia card with animation
+            triviaCard.style.display = 'block';
+            triviaCard.style.animation = 'none';
+            triviaCard.offsetHeight; // force reflow
+            triviaCard.style.animation = 'slideIn 0.8s ease-out forwards';
+
+            // Hide loading and show button
+            loading.style.display = 'none';
+            btn.style.display = 'inline-block';
+            document.getElementById('btnText').textContent = 'Next Trivia';
+        }, 1000);
+    }
+
+    // Create animated background particles
+    function createParticles() {
+        const particlesContainer = document.querySelector('.particles');
+        const particleCount = 50;
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 6 + 's';
+            particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+            particlesContainer.appendChild(particle);
+        }
+    }
+
+    // Initialize the app
+    window.addEventListener('load', () => {
+        loadTriviaData();
+        createParticles();
+    });
+</script>

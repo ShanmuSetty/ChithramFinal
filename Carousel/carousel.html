@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="icon" href="../assets/logo.PNG" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-item active" data-section="home">Home</a>
+            <a href="../index.html#footer" class="nav-item" data-section="about">About</a>
+            <a href="../index.html#Section5" class="nav-item" data-section="map">Map</a>
+            
+                
+            
+            <a href="#globe" class="nav-item" data-section="globe"><div class="gtranslate_wrapper globe-icon"></div></a>
+
+        </div>
+    </nav>
+    <video autoplay muted loop class="video-bg">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        Loading content...
+    </div>
+
+    <div class="error" id="error" style="display: none;">
+        Failed to load content. Please try again.
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+
+        <button class="nav-btn prev-btn" onclick="prevCard()" style="display: none;">‹</button>
+        <button class="nav-btn next-btn" onclick="nextCard()" style="display: none;">›</button>
+
+        <div class="dots-container" id="dotsContainer"></div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-container" id="popupContainer">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            
+            <div class="popup-header" id="popupHeader">
+                <img class="popup-poster" id="popupPoster" src="" alt="Movie Poster">
+                <h2 class="popup-title" id="popupTitle">Movie Title</h2>
+                <p class="popup-subtitle" id="popupSubtitle">Genre • Year</p>
+            </div>
+
+            <div class="popup-description" id="popupDescription">
+                <h3>📝 Synopsis</h3>
+                <p id="popupSynopsis">Movie description will appear here...</p>
+            </div>
+
+            <div class="popup-content">
+                <div class="info-section" id="Details">
+                    <h3 class="info-title">🎬 Movie Details</h3>
+                    <div class="info-item">
+                        <span class="info-label">Director</span>
+                        <span class="info-value" id="popupDirector">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Genre</span>
+                        <span class="info-value" id="popupGenre">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Release Year</span>
+                        <span class="info-value" id="popupYear">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Language</span>
+                        <span class="info-value" id="popupLanguage">-</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Duration</span>
+                        <span class="info-value" id="popupDuration">-</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3 class="info-title">⭐ Ratings & Production</h3>
+                    <div class="info-item">
+                        <span class="info-label">IMDb Rating</span>
+                        <span class="info-value rating-stars" id="popupRating">-</span>
+                    </div>
+                    <div class="info-item popupProductionHouse">
+                        <span class="info-label">Production House(s)</span>
+                        <span class="info-value" id="popupProductionHouse">-</span>
+                    </div>
+                
+                </div>
+
+                <div class="info-section cast-crew">
+                    <h3 class="info-title">🎭 Cast & Crew</h3>
+                    
+                </div>
+                <div class="info-section impact" id="impactSection">
+                    <h3 class="info-title"> Cultural Impact</h3>
+                    <div class="info-item">
+                        <p id="popupCulturalImpact"></p>
+                    </div>
+                </div>
+                <div class="info-section gallery" id="gallerySection">
+                    <h3 class="info-title"> Gallery</h3>
+                    
+                        <div class="grid" id="popupGallery"></div>
+                    
+                </div>
+            </div>
+<div class="tab-navigation">
+                <a class="tab-btn active" href="#popupHeader">Details</a>
+                <a class="tab-btn" href="../index.html">Home</a>
+
+                </div>
+            
+    </div>
+                
+            </div>
+            </div>
+                
+                </div>
+        </div>
+    </div>
+
+    
+<script>
+      window.gtranslateSettings = {
+        default_language: "en",
+        wrapper_selector: ".gtranslate_wrapper",
+      };
+    </script>
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/dropdown.js"
+      defer
+    ></script>
+</body>
+<script src="script.js" type="module"></script>
+</html>
