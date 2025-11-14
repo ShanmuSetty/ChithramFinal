@@ -2,7 +2,7 @@
 
 **Chithram** is an interactive cinematic web project showcasing the evolution, culture, and diversity of Indian cinema through a multi-section, animation-rich landing page. The project features a Three.js-powered 3D animated intro, static content sections on cinematography history, a state-wise film discovery system using an interactive India map, and a movie carousel that fetches real-time data from Firebase and TMDb API. It also integrates quizzes, trivia, and an AI chatbot powered by Gemini API, along with multiple connected React/Next.js apps for movie browsing, director exploration, image captioning, and cinematic “firsts.” Additional features include text-to-speech, multi-language translation, and a fully responsive, immersive user experience.
 
-[![Chithram Live](https://img.shields.io/badge/Visit_Chithram-6A5ACD?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.chithram101.netlify.app)
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-Chithram-8A2BE2?style=for-the-badge&logo=netlify&logoColor=white)](https://www.chithram101.netlify.app)
 ---
 
 ## 🛠️ Tech Stack
