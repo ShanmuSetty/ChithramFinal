@@ -1,5 +1,7 @@
-import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
-import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'three';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/loaders/GLTFLoader.js';
+
+
 console.log('Hello');
 // Scene setup
 const scene = new THREE.Scene();
@@ -28,7 +30,7 @@ let basePosition = { x: 0, y: 0, z: 0 }; // Store the base position for hover ef
 let time = 0; // Time variable for animation
 
 const loader = new GLTFLoader();
-loader.load('/Chithram/battle-armour_sonar_titan__virlance.glb', (gltf) => {
+loader.load('battle-armour_sonar_titan__virlance.glb', (gltf) => {
     model = gltf.scene;
     model.position.set(1, 1, 2);
     model.rotation.y = 74.525; // initial position
